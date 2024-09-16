@@ -1,0 +1,23 @@
+{
+    "name": "desktop-app",
+    "root": "apps/desktop-app",
+    "sourceRoot": "apps/desktop-app/src",
+    "projectType": "application",
+    "targets": {
+      "build": {
+        "executor": "nx:run-commands",
+        "options": {
+          "command": "npm run build",
+          "cwd": "apps/desktop-app"
+        }
+      },
+      "serve": {
+        "executor": "nx:run-commands",
+        "options": {
+          "command": "npm run tauri dev",
+          "cwd": "apps/desktop-app"
+        }
+      }
+    }
+  }
+  
